@@ -13,12 +13,18 @@
 
   body {
     font-family: 'Mulish', sans-serif;
-    max-width: 1440px;
-    margin: 0 auto;
+
   }
 
   .container {
+    max-width: 1440px;
+    margin: 0 auto;
+
+  }
+
+  .container_nav {
     position: relative;
+    top: 0;
 
   }
 
@@ -27,8 +33,9 @@
     height: 407.24px;
     width: 674.18px;
     transform: scale(1, -1);
-    top: -305px;
+    top: -285px;
     right: 0;
+    z-index: -1;
   }
 
   .navbar {
@@ -59,6 +66,11 @@
   .text3 {
     font-size: 20px;
     line-height: 30px;
+  }
+
+  .text4 {
+    font-size: 14px;
+    line-height: 18px;
   }
 
   .heading1 {
@@ -232,23 +244,32 @@
 
   .slider_cafe_bg {
     position: absolute;
-    top: -100px;
+    top: 70px;
     width: 100vw;
-    left: -10px;
+    left: 0px;
+    right: 0px;
     z-index: -1;
   }
-  .slider_heading{
+
+  .slider_heading {
     display: flex;
     justify-content: space-between;
+    align-items: end;
     margin-bottom: 65px;
   }
-  .slider_heading h2{
 
-  }
-  .slider_heading a{
+  .slider_heading h2 {}
+
+  .slider_heading a {
     text-decoration: none;
     color: #000000;
   }
+
+  .cards {
+    display: flex;
+    justify-content: space-around;
+  }
+
   .card {
     gap: 36px;
     width: 373px;
@@ -268,3 +289,71 @@
     width: 100%;
     object-fit: cover;
   }
+
+  .card_details {
+    margin: 15px;
+    margin-top: 50px;
+  }
+
+  .card_details h5 {
+    margin-bottom: 10px;
+  }
+
+  .card_details .card_description {
+    margin-bottom: 15px;
+  }
+
+  /* cafe space */
+  .cafe_space {
+    margin-top: 200px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 20px;
+  }
+  .space_title {
+    grid-row: 1;
+    grid-column: 1 / span 2;
+  }
+
+  .space_title p {
+    color: #796666;
+  }
+
+  .left_image {
+    grid-row: 2 / span 2;
+    grid-column: 1 / span 2;
+    background: #C4C4C4;
+  }
+
+
+  .middle_image {
+    grid-row: 1/ span 3;
+    grid-column: 3;
+  }
+
+  .top_image {
+    grid-row: 1 / span 2;
+    grid-column: 4;
+  }
+
+  .bottom_image {
+    grid-row: 3;
+    grid-column: 4;
+  }
+  
+
+  .cafe_space img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+  .space_link{
+  grid-column: 4;
+   text-align: right;
+  }
+  .space_link a{
+    text-decoration: none;
+    color: var(--dark);
+  }
+  
