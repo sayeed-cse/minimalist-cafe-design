@@ -14,6 +14,7 @@
   body {
     font-family: 'Mulish', sans-serif;
 
+
   }
 
   .container {
@@ -311,6 +312,7 @@
     grid-template-rows: repeat(3, 1fr);
     gap: 20px;
   }
+
   .space_title {
     grid-row: 1;
     grid-column: 1 / span 2;
@@ -341,19 +343,60 @@
     grid-row: 3;
     grid-column: 4;
   }
-  
+
 
   .cafe_space img {
     height: 100%;
     width: 100%;
     object-fit: cover;
   }
-  .space_link{
-  grid-column: 4;
-   text-align: right;
+
+  .space_link {
+    grid-column: 4;
+    text-align: right;
   }
-  .space_link a{
+
+  .space_link a {
     text-decoration: none;
     color: var(--dark);
   }
-  
+
+  /* review section start */
+  .review_section {
+    margin-top: 200px;
+  }
+
+  .review_section > h2 {
+    margin-bottom: 20px;
+  }
+
+  .review_content {
+    position: relative;
+    height: 524.05px;
+    background: var(--pale-taupe);
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .review_section_image {
+    top: -450px;
+    position: absolute;
+    width: 100%;
+    filter: brightness(1.3);
+  }
+
+  .comments {
+    width: 1167px;
+    height: 346px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+    justify-content: center;
+    align-items: center;
+    background: #FFFFFF;
+    border-radius: 56px;
+    color: #796666;
+    z-index: 100;
+  }
