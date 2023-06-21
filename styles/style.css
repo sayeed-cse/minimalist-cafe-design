@@ -1,0 +1,270 @@
+  @import url('https://fonts.googleapis.com/css2?family=Mulish&display=swap');
+
+  :root {
+    --dark-gray: #c4c4c4;
+    --pale-taupe: #B79975;
+    --dark: #000000;
+  }
+
+  * {
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    font-family: 'Mulish', sans-serif;
+    max-width: 1440px;
+    margin: 0 auto;
+  }
+
+  .container {
+    position: relative;
+
+  }
+
+  .pattern_head {
+    position: absolute;
+    height: 407.24px;
+    width: 674.18px;
+    transform: scale(1, -1);
+    top: -305px;
+    right: 0;
+  }
+
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 56px;
+
+  }
+
+  .text_dark {
+    color: #000000;
+  }
+
+  .text_light {
+    color: #ffffff;
+  }
+
+  .text1 {
+    font-size: 36px;
+    line-height: 45px;
+  }
+
+  .text2 {
+    font-size: 28px;
+    line-height: 35px;
+  }
+
+  .text3 {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .heading1 {
+    font-size: 80px;
+    line-height: 100px;
+  }
+
+  .heading2 {
+    font-size: 64px;
+    line-height: 80px;
+  }
+
+
+  .heading3 {
+    font-size: 30px;
+    line-height: 38px;
+  }
+
+  .fw4 {
+    font-weight: 400;
+  }
+
+  .fw5 {
+    font-weight: 500;
+  }
+
+  .fw6 {
+    font-weight: 600;
+  }
+
+  .fw7 {
+    font-weight: 700;
+  }
+
+  .logo_area {
+    width: 271px;
+    height: 162px;
+    background: rgba(217, 217, 217, 0.2);
+    border-radius: 45px;
+    padding: 12px 26px;
+  }
+
+  .navigation ul {
+    display: flex;
+    gap: 50px;
+    list-style: none;
+  }
+
+  .navigation ul li a {
+    text-decoration: none;
+    color: var(--dark);
+  }
+
+  /* Branding area start */
+  .branding_area {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: end;
+    align-items: end;
+
+  }
+
+  .left_section {
+    margin-right: 158PX;
+  }
+
+  .left_section h2 {
+    margin-bottom: 25px;
+  }
+
+  .branding_links {
+    margin-top: 100PX;
+    margin-bottom: 10px;
+
+  }
+
+  .button_primary {
+    text-decoration: none;
+    background-color: var(--pale-taupe);
+    padding: 14px 55px;
+    border-radius: 45PX;
+    margin-right: 15px;
+  }
+
+  .right_section {
+    width: 610px;
+    height: 677px;
+    background: var(--dark-gray);
+    position: relative;
+    border-radius: 35px;
+    box-shadow: 10px 16px 28px rgba(0, 0, 0, 0.25);
+    overflow: hidden;
+  }
+
+  .branding_image {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+
+  }
+
+  .cafe_likes {
+    width: 214px;
+    height: 256px;
+    background: var(--pale-taupe);
+    border-radius: 35px;
+    position: absolute;
+    right: 35px;
+    bottom: 35px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+
+  .cafe_likes p {
+    padding-left: 19px;
+  }
+
+  /* Branding area End */
+
+  /* about us section start*/
+  .about_section {
+    position: relative;
+    margin-top: 200px;
+  }
+
+  .pattern_about {
+    position: absolute;
+    width: 407px;
+    height: 674px;
+    /* transform: rotate(90deg); */
+    top: -85px;
+    left: -157px;
+  }
+
+  .about_area {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 105px;
+    width: 1112px;
+  }
+
+  .about_left {
+    width: 528px;
+    height: 562px;
+    background: #C4C4C4;
+    z-index: 2;
+  }
+
+  .about_image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .about_right h3 {
+    margin-bottom: 26px;
+  }
+
+  .about_right p {
+    margin-bottom: 109px;
+  }
+
+  /* about us section End*/
+
+  /* slider and cafe section */
+  .slider_cafe_section {
+    position: relative;
+    margin-top: 200px;
+  }
+
+  .slider_cafe_bg {
+    position: absolute;
+    top: -100px;
+    width: 100vw;
+    left: -10px;
+    z-index: -1;
+  }
+  .slider_heading{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 65px;
+  }
+  .slider_heading h2{
+
+  }
+  .slider_heading a{
+    text-decoration: none;
+    color: #000000;
+  }
+  .card {
+    gap: 36px;
+    width: 373px;
+    height: 504px;
+    background: #FFFFFF;
+    box-shadow: 4px 5px 25px rgba(0, 0, 0, 0.1);
+  }
+
+  .card_image {
+    width: 373px;
+    height: 312px;
+    background: #C4C4C4;
+  }
+
+  .card_image img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
